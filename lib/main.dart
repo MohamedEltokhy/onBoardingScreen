@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:onboardingscreen/HomeBage.dart';
+import 'package:onboardingscreen/UI/HomePage.dart';
+import 'package:onboardingscreen/UI/SplashScreen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'UI/OnBoardingScreen.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: showHome ? HomePage() : OnBoardingScreen(),
+      home: showHome ? SplashScreen() : OnBoardingScreen(),
     );
   }
 }

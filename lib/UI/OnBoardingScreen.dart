@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:onboardingscreen/HomeBage.dart';
+import 'package:onboardingscreen/UI/HomePage.dart';
+import 'package:onboardingscreen/UI/SplashScreen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -72,7 +73,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   prefs.setBool('showHome', true);
 
                   Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) => HomePage())
+                    MaterialPageRoute(builder: (context) => SplashScreen())
                   );
                 },
               )
